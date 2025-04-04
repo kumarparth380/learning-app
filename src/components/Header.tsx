@@ -1,7 +1,8 @@
-'use client';
+"use client";
 
-import Link from 'next/link';
-import Image from 'next/image';
+import Link from "next/link";
+import Image from "next/image";
+import { Button } from "@/components/ui/button";
 
 const Header = () => {
   return (
@@ -16,28 +17,28 @@ const Header = () => {
         </Link>
       </div>
 
-        <nav className="hidden md:flex space-x-8">
-          <Link href="/pricing" className="text-gray-600 hover:text-gray-900">
-            Pricing
-          </Link>
-          <Link href="/examples" className="text-gray-600 hover:text-gray-900">
-            Examples
-          </Link>
-          <Link href="/affiliate" className="text-gray-600 hover:text-gray-900">
-            Affiliate
-          </Link>
-          <Link href="/products" className="text-gray-600 hover:text-gray-900">
-            Products
-          </Link>
-        </nav>
+      <nav className="hidden md:flex space-x-8">
+        <Link href="/pricing" className="text-gray-600 hover:text-gray-900">
+          Pricing
+        </Link>
+        <Link href="/examples" className="text-gray-600 hover:text-gray-900">
+          Examples
+        </Link>
+        <Link href="/affiliate" className="text-gray-600 hover:text-gray-900">
+          Affiliate
+        </Link>
+        <Link href="/products" className="text-gray-600 hover:text-gray-900">
+          Products
+        </Link>
+      </nav>
 
       <div className="flex items-center gap-2">
-            <button className="px-4 py-2 rounded-md border border-gray-300 text-gray-700 hover:bg-gray-50">
-              Login
-            </button>
-            <button className="px-4 py-2 rounded-md bg-blue-500 text-white hover:bg-blue-600">
-              Sign-up for Free
-            </button>
+        <Button variant='outline' className="px-4 py-1 rounded-3xl border border-gray-300">
+          Login
+        </Button>
+        <Button variant='outline' className="px-4 py-1 rounded-3xl border border-gray-300">
+          Sign-up for Free
+        </Button>
       </div>
     </header>
   );

@@ -22,8 +22,6 @@ export function useStudyContent() {
         // If direct text input is provided
         else if (studyText.trim()) {
           content = studyText;
-        } else {
-          throw new Error("Please provide content to study");
         }
   
         sessionStorage.setItem("studyContent", content);
